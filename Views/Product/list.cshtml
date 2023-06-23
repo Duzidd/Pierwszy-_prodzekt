@@ -1,0 +1,27 @@
+﻿@model IEnumerable<Pierwszy__prodzekt.Models.Product>
+@{
+    ViewData["Title"] = "list";
+}
+
+<h1>list</h1>
+<ul>
+@foreach(var product in Model)
+{
+    <li>@product.Category-@product.Name-@product.Id
+    </li>
+    }
+</ul>
+
+
+<h2>Warunek tylko 1</h2>
+
+
+@foreach (var product in Model)
+{
+    if(product.Id==1){
+    <li>
+        @product.Category-@product.Name-@product.Id
+    </li>
+    }
+}
+</ul>

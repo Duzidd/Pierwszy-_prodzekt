@@ -1,0 +1,11 @@
+﻿@model Pierwszy__prodzekt.Models.Product
+@{
+    ViewData["Title"] = "Add";
+}
+
+<h1>Formularz dodający produkt do magazynu</h1>
+
+
+@Html.Partial("_addprodukt",Model)
+
+<p>Id po zapisie<strong>@TempData["id"]</strong></p>

@@ -1,0 +1,15 @@
+﻿@model Pierwszy__prodzekt.Models.Product
+
+@using (Html.BeginForm("Add", "Warehousecontroller1", FormMethod.Post))
+{
+    @Html.ValidationSummary()
+    <span>naZWA</span> @Html.TextBoxFor(x=>x.Name)
+    <span>OPIS</span>
+
+    @Html.TextBoxFor(x=>x.Description)
+    <span>kategoria</span> @Html.TextBoxFor(x=>x.Category)
+
+    <button type="submit">wyślij</button>
+
+    <p>Dodaj coś </p>
+}
